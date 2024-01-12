@@ -1,3 +1,4 @@
-- name: CodeQL and Dependabot Report Action
-uses: rsdmike/github-security-report-action@v3.0.4
-            
+name: Generate Security Report
+uses: rsdmike/github-security-report-action@v2
+with:
+  token: ${{ secrets.SECURITY_TOKEN }}
